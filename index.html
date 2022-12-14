@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <main>
+    <div class="container" id="container">
+      <div class="logo-container">
+        <img class="logo" src="images/icon-star.svg" alt="star">
+      </div>
+      <div class="feedback-container">
+        <h1> How did we do?</h1>
+          <p class="feedback-txt"> 
+            Please let us know how we did with your 
+            support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+      </div>
+      <div class="number-container">
+          <button id="one">1</button>
+          <button id="two">2</button>
+          <button id="three">3</button>
+          <button id="four">4</button>
+          <button id="five">5</button>
+      </div>
+      <button id="submit-btn" class="submit">Submit</button>    
+      <div class="attribution">
+        <p> 
+          Challenge by 
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by 
+          <a href="https://github.com/OGBENI-NG/OGBENI-NG" target="_blank">Adeolu Miracle</a>.
+        </p>
+      </div>
+    </div>  
+    <section>
+      <div class="container rating-container" id="final-rating">
+        <div class="img2">
+          <img src="images/illustration-thank-you.svg" alt="illustration">
+        </div>
+        <span id="nunber-clicked" class="number-clicked-feedback"></span> 
+        <h1 class="thank-you">Thank you!</h1>
+        <p class="appreciate-txt"> 
+          We appreciate you taking the time to give a rating. 
+          If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p> 
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

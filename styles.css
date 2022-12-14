@@ -1,0 +1,168 @@
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container , 
+.logo-container, 
+.number-container {
+    display: flex;
+}
+
+
+.container {
+    position: fixed;
+    position: relative;;
+    width: 90%;
+    max-width: 375px;
+    margin: 22vh auto;
+    flex-direction: column;
+    padding: 1.5em 1.5em 1em;
+    background-color: hsla(213, 20%, 18%, 0.615);
+    border-radius: 15px;
+}
+
+.rating-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 22vh auto;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+}
+
+.number-container {
+    justify-content: space-between;
+    padding: .5em 0 1.5em;
+    gap: 10px;
+    
+}
+
+.number-container button {
+    border: none;
+    font-weight: 700;
+    color: hsl(217, 12%, 63%);
+}
+
+.number-container button, 
+.logo-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%)
+}
+
+.number-container button:focus {
+   background-color: hsl(217, 12%, 63%);
+   color: hsl(0, 0%, 100%);
+}
+
+.number-container button:hover {
+    background-color: #FF822C;    
+    color: hsl(0, 0%, 100%);
+}
+
+.logo {
+    margin: auto;
+}
+
+.submit {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    padding: 1em;
+    border: none;
+    border-radius: 50px;
+    background-color: #FF822C;;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: #FF822C;
+}
+
+/* typograpy */
+
+h1, .submit {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+
+
+.feedback-txt{
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    margin-top: -.3em;
+}
+
+.attribution p{ 
+    padding-top: 1em;
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+.hidden {
+    display: none;
+}
+
+.img2 {
+    padding: 1em 0 1.5em;
+}
+
+.number-clicked-feedback {
+    background-color: hsl(213, 19%, 18%);
+    padding: .5em 1em ;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #FF822C;
+    
+}
+
+.thank-you {
+    padding: 1em 0 0;
+    margin-top: .5em;
+}
+
+.appreciate-txt {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    margin-top: -.5em;
+    padding: 0 0 1em;
+    color: hsl(217, 12%, 63%);
+}
+
+@media (min-width: 768px) {
+    .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: max-content;
+    }
+}
